@@ -16,7 +16,7 @@ function Registration() {
     event.preventDefault();
     console.log({ username: data.username, password: data.password });
     axios
-      .post("http://localhost:4000/registration", {
+      .post("https://login-backend-pi.vercel.app/registration", {
         username: data.username,
         passwordHash: data.password,
       })
